@@ -1,0 +1,258 @@
+/*  */
+/* GENERAL */
+/*  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cabin', sans-serif;
+    color: #022B3A;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*  */
+/* FLEXBOX */
+/*  */
+
+header, 
+.logo, 
+nav, 
+.navigation, 
+.connexion, 
+.navigation ul, 
+.navigation ul li, 
+.heading, 
+.text-heading, 
+.destinations, 
+.card-destinations,
+.card{
+    display: flex;
+}
+
+header {
+    background: #022B3A;
+    justify-content: space-between;
+    height: 5em;
+    width: 100%;
+    padding: 1em;
+    color: #F0FDFA;
+}
+
+/*  */
+/* LOGO */
+/*  */
+
+.logo{
+    flex: 1;
+    align-items: center;
+}
+
+.logo img{
+    height: 2em;
+    margin-right: 1em;
+}
+
+.logo p{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: 8px;
+}
+
+/*  */
+/* NAVIGATION */
+/*  */
+ nav{
+    flex: 2;
+ }
+
+ .navigation{
+    flex: 2;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.navigation ul{
+    flex: 2;
+    justify-content: space-around;
+    color: hsla(166, 76%, 97%, 0.5);
+    border-radius: 2em;
+ }
+
+ .navigation ul li{
+    justify-content: center;
+    height: 2.5em;
+    width: 8em;
+    align-items: center;
+ }
+
+ .navigation ul li:hover{
+    color: #F0FDFA;
+    transition: 0.5s ease;
+ }
+
+/*  */
+/* CONNEXION */
+/*  */
+
+ .connexion{
+    flex:1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.connexion a{
+    display: flex;
+    height: 3em;
+    width: 7em;
+    justify-content: center;
+    align-items: center;
+    border: solid #F0FDFA 1px;
+    border-radius: 25px;
+}
+
+/* Icone Cosmonaute caché */
+#user-icon{
+    display: none;
+    height: 1.5em;
+    margin-left: .5em;
+}
+
+.connexion a:hover{
+    color: #022B3A;
+    background: #F0FDFA;
+    width: 9em;
+    transition: 0.5s ease;
+}
+
+
+/* Icone cosmonaute affiché lors du :hover */
+.connexion a:hover>#user-icon{
+    display: inline-block;
+    transition: 0.5s ease-in;
+}
+
+
+/*  */
+/* SECTION HEADING */
+/*  */
+
+.heading{
+  height: 90vh;
+  padding: 100px;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(20,184,166);
+  background: linear-gradient(341deg, rgba(20,184,166,0.5) 0%, rgba(255,255,255,1) 60%);
+
+
+}
+
+.text-heading{
+    flex: 2;
+    margin-right: 5%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.text-heading h1{
+    font-size: 4em;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.text-heading strong{
+    color: #14B8A6;
+}
+
+.text-heading p{
+    font-size: 1.5em;
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+.text-heading a{
+    color: #F1A208;
+}
+
+.heading img{
+   border-radius: 20px;
+   flex: 1;
+   max-width: 70%;
+   max-height: 70%;
+   box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.418) ;
+  }
+
+
+/*  */
+/* SECTION DESTINATIONS */
+/*  */
+
+.destinations{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    height: 100vh;
+    
+}
+
+.destinations h2{
+    font-size: 2.5em;
+}
+
+.card-destinations{
+    justify-content: space-around;
+}
+.card {
+    flex-direction: column;
+    max-width: 300px;
+    height: 400px;
+    margin: 2em;
+    background: #f0fdfa54;
+    border-radius: 2em;
+    box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.418) ;
+}
+
+.card:hover {
+    height: 600px;
+    transition: 0.3s ease;
+}
+
+.card img{
+    max-width: 300px;
+    border-radius: 2em 2em 0 0;
+}
+
+.card-title{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.2em;
+}
+
+.card-description {
+    padding: 1em;
+    text-align: justify;
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+
+
+/*  */
+/* MEDIA QUERIES */
+/*  */
