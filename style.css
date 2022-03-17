@@ -302,7 +302,6 @@ header .logo p{
         position: fixed;
         right: 0;
         top: 10vh;
-        font-size: .8rem;
         padding-left: 1em;
         padding-right: 1em;
     }
@@ -314,6 +313,12 @@ header .logo p{
         justify-content: space-around;
         text-transform: uppercase;
     }
+
+    .menu_menu-categories a{
+        font-size: 0.8em;
+        color: rgba(240, 252, 249, 0.7);
+    }
+
 
 .menu_menu-connexion{
         display: flex;
@@ -352,7 +357,7 @@ header .logo p{
 
 /* MEDIA QUERIES - PC */
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 920px) {
 
 
     /* Header */
@@ -407,6 +412,21 @@ header .logo p{
         justify-content: space-between;
     }
 
+    .menu_menu-categories a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba(240, 252, 249, 0.5);
+        height: 3em;
+        width: 25%;
+        font-size: 1em;
+    }
+
+    .menu_menu-categories a:hover{
+        color: rgb(240, 252, 249);
+        transition: all 0.2s ease-in;
+    }
+    
     
     /*  */
     /* CONNEXION */
@@ -430,13 +450,13 @@ header .logo p{
         color: #022B3A;
         background: #F0FDFA;
         width: 9em;
-        transition: .5s ease-in;
+        transition: .4s ease-out;
     } 
 
     /* Icone cosmonaute affiché lors du :hover */
     .menu_menu-connexion a:hover>#user-icon{
         display: inline-block;
-        transition: .5s ease-in;
+        transition: .4s ease-out;
     } 
     
 }
