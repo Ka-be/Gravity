@@ -1,4 +1,4 @@
-/*  */
+
 /* GENERAL */
 /*  */
 
@@ -27,7 +27,7 @@ a{
 /* FLEXBOX */
 /*  */
 
-header, 
+/* header, 
 .logo, 
 nav, 
 .navigation, 
@@ -49,13 +49,13 @@ header {
     width: 100%;
     padding: 1em;
     color: #F0FDFA;
-}
+} */
 
 /*  */
 /* LOGO */
 /*  */
 
-.logo{
+/* .logo{
     flex: 1;
     align-items: center;
 }
@@ -69,12 +69,12 @@ header {
     text-transform: uppercase;
     font-size: 1.3em;
     letter-spacing: 8px;
-}
+} */
 
 /*  */
 /* NAVIGATION */
 /*  */
- nav{
+ /* nav{
     flex: 2;
  }
 
@@ -101,12 +101,12 @@ header {
  .navigation ul li:hover{
     color: #F0FDFA;
     transition: 0.5s ease;
- }
+ } */
 
 /*  */
 /* CONNEXION */
 /*  */
-
+/* 
  .connexion{
     flex:1;
     justify-content: flex-end;
@@ -121,10 +121,10 @@ header {
     align-items: center;
     border: solid #F0FDFA 1px;
     border-radius: 25px;
-}
+} */
 
 /* Icone Cosmonaute caché */
-#user-icon{
+/* #user-icon{
     display: none;
     height: 1.5em;
     margin-left: .5em;
@@ -135,21 +135,21 @@ header {
     background: #F0FDFA;
     width: 9em;
     transition: 0.5s ease;
-}
+} */
 
 
 /* Icone cosmonaute affiché lors du :hover */
-.connexion a:hover>#user-icon{
+/* .connexion a:hover>#user-icon{
     display: inline-block;
     transition: 0.5s ease-in;
-}
+} */
 
 
 /*  */
 /* SECTION HEADING */
 /*  */
 
-.heading{
+/* .heading{
   height: 90vh;
   padding: 100px;
   justify-content: space-around;
@@ -196,14 +196,14 @@ header {
    max-width: 70%;
    max-height: 70%;
    box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.418) ;
-  }
+  } */
 
 
 /*  */
 /* SECTION DESTINATIONS */
 /*  */
 
-.destinations{
+/* .destinations{
     flex-direction: column;
     align-items: center;
     padding-top: 2em;
@@ -249,10 +249,78 @@ header {
     text-align: justify;
     font-size: 0.8em;
     font-weight: lighter;
+} */
+
+
+
+/*  */
+/* MOBILE FIRST SECTION */
+/*  */
+
+
+
+
+header {
+    background: #022B3A;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #F0FDFA;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
+header .logo img{
+    display: none;
+}
+
+header .logo p{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    letter-spacing: .5rem;
+}
+
+/* Menu Hamburger */
 
 
-/*  */
-/* MEDIA QUERIES */
-/*  */
+label.hamburger 
+    {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+.menu 
+    {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        background: #022B3A;
+        width: 100vw;
+        height: 6rem;
+        position: fixed;
+        right: 0;
+        top: 12vh;
+        text-transform: uppercase;
+        font-size: .8rem;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+
+#toggle:checked + .menu {
+        display: flex;
+    }
+
+#toggle {
+        display: none;
+    }
+
+/* MEDIA QUERIES - TABLETTE */
+
+
+/* MEDIA QUERIES - TABLETTE XL / LAPTOP */
+
+
+/* MEDIA QUERIES - PC */
