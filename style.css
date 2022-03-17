@@ -24,128 +24,6 @@ a{
 
 
 /*  */
-/* FLEXBOX */
-/*  */
-
-/* header, 
-.logo, 
-nav, 
-.navigation, 
-.connexion, 
-.navigation ul, 
-.navigation ul li, 
-.heading, 
-.text-heading, 
-.destinations, 
-.card-destinations,
-.card{
-    display: flex;
-}
-
-header {
-    background: #022B3A;
-    justify-content: space-between;
-    height: 5em;
-    width: 100%;
-    padding: 1em;
-    color: #F0FDFA;
-} */
-
-/*  */
-/* LOGO */
-/*  */
-
-/* .logo{
-    flex: 1;
-    align-items: center;
-}
-
-.logo img{
-    height: 2em;
-    margin-right: 1em;
-}
-
-.logo p{
-    text-transform: uppercase;
-    font-size: 1.3em;
-    letter-spacing: 8px;
-} */
-
-/*  */
-/* NAVIGATION */
-/*  */
- /* nav{
-    flex: 2;
- }
-
- .navigation{
-    flex: 2;
-    align-items: center;
-    font-size: 1.2em;
-}
-
-.navigation ul{
-    flex: 2;
-    justify-content: space-around;
-    color: hsla(166, 76%, 97%, 0.5);
-    border-radius: 2em;
- }
-
- .navigation ul li{
-    justify-content: center;
-    height: 2.5em;
-    width: 8em;
-    align-items: center;
- }
-
- .navigation ul li:hover{
-    color: #F0FDFA;
-    transition: 0.5s ease;
- } */
-
-/*  */
-/* CONNEXION */
-/*  */
-/* 
- .connexion{
-    flex:1;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.connexion a{
-    display: flex;
-    height: 3em;
-    width: 7em;
-    justify-content: center;
-    align-items: center;
-    border: solid #F0FDFA 1px;
-    border-radius: 25px;
-} */
-
-/* Icone Cosmonaute caché */
-/* #user-icon{
-    display: none;
-    height: 1.5em;
-    margin-left: .5em;
-}
-
-.connexion a:hover{
-    color: #022B3A;
-    background: #F0FDFA;
-    width: 9em;
-    transition: 0.5s ease;
-} */
-
-
-/* Icone cosmonaute affiché lors du :hover */
-/* .connexion a:hover>#user-icon{
-    display: inline-block;
-    transition: 0.5s ease-in;
-} */
-
-
-/*  */
 /* SECTION HEADING */
 /*  */
 
@@ -286,7 +164,7 @@ header .logo p{
 /* Menu Hamburger */
 
 
- label.hamburger /*Bouton Hamburger */
+label.hamburger /*Bouton Hamburger */
     {
         font-size: 2rem;
         cursor: pointer;
@@ -314,7 +192,7 @@ header .logo p{
         text-transform: uppercase;
     }
 
-    .menu_menu-categories a{
+.menu_menu-categories a{
         font-size: 0.8em;
         color: rgba(240, 252, 249, 0.7);
     }
@@ -334,11 +212,11 @@ header .logo p{
         border-radius: 1em;
     }
 
- #user-icon { /*Icone cosmonaute */
+#user-icon { /*Icone cosmonaute */
         display: none;
         }
 
- #toggle:checked + .menu { /*Apparition du menu au clic du toggle */
+#toggle:checked + .menu { /*Apparition du menu au clic du toggle */
         display: flex;
     }
 
@@ -346,7 +224,38 @@ header .logo p{
         display: none;
     }
 
+/* Heaading */
 
+.heading{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    height: 100vh;
+    text-align: justify;
+    justify-content: space-around;
+    background: rgb(20,184,166);
+    background: linear-gradient(340deg, rgba(20,184,166,0.5) 0%, rgba(255,255,255,1) 60%);
+}
+
+.heading_text-heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading_text-heading h1{
+    font-size: 3em;
+    padding-bottom: .3em;
+}
+
+.heading_text-heading strong{
+    color: #14B8A6;
+}
+
+.heading>img{
+    border-radius: 1em;
+}
 
 
 /* MEDIA QUERIES - TABLETTE */
