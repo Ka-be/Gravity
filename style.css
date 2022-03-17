@@ -258,18 +258,19 @@ header {
 /*  */
 
 
-
+/* Header */
 
 header {
     background: #022B3A;
     width: 100vw;
-    height: 12vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #F0FDFA;
     padding-left: 1em;
     padding-right: 1em;
+    position: fixed;
 }
 
 header .logo img{
@@ -285,7 +286,7 @@ header .logo p{
 /* Menu Hamburger */
 
 
-label.hamburger 
+ label.hamburger /*Bouton Hamburger */
     {
         font-size: 2rem;
         cursor: pointer;
@@ -294,28 +295,54 @@ label.hamburger
 .menu 
     {
         display: none;
-        flex-direction: column;
         justify-content: space-around;
         background: #022B3A;
         width: 100vw;
         height: 6rem;
         position: fixed;
         right: 0;
-        top: 12vh;
-        text-transform: uppercase;
+        top: 10vh;
         font-size: .8rem;
         padding-left: 1em;
         padding-right: 1em;
     }
 
+.menu_menu-categories{
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        justify-content: space-around;
+        text-transform: uppercase;
+    }
 
-#toggle:checked + .menu {
+.menu_menu-connexion{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+.menu_menu-connexion>a{
+        padding: 1em;
+        border: #F0FDFA 1px solid;
+        border-radius: 1em;
+    }
+
+ #user-icon { /*Icone cosmonaute */
+        display: none;
+        }
+
+ #toggle:checked + .menu { /*Apparition du menu au clic du toggle */
         display: flex;
     }
 
 #toggle {
         display: none;
     }
+
+
+
 
 /* MEDIA QUERIES - TABLETTE */
 
@@ -324,3 +351,92 @@ label.hamburger
 
 
 /* MEDIA QUERIES - PC */
+
+@media screen and (min-width: 1024px) {
+
+
+    /* Header */
+    
+    header{
+      height: 6rem;
+    }
+
+    .logo{
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+    
+    header .logo img{
+        display: block;
+        height: 2em;
+        margin-right: 1em;
+    }
+    
+    .logo p{
+        text-transform: uppercase;
+        font-size: 1.3em;
+        letter-spacing: 8px;
+    }
+    
+
+    /* Menu */
+ 
+    label.hamburger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        width: 70vw;
+        top: 0;
+    }
+    
+    
+    .menu_menu-categories{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    
+    /*  */
+    /* CONNEXION */
+    /*  */
+    
+    .menu_menu-connexion a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    } 
+    
+    /* Icone Cosmonaute caché */
+     #user-icon{
+        display: none;
+        height: 1.5em;
+        margin-left: .5em;
+    }
+    
+    .menu_menu-connexion a:hover{
+        color: #022B3A;
+        background: #F0FDFA;
+        width: 9em;
+        transition: .5s ease-in;
+    } 
+
+    /* Icone cosmonaute affiché lors du :hover */
+    .menu_menu-connexion a:hover>#user-icon{
+        display: inline-block;
+        transition: .5s ease-in;
+    } 
+    
+}
