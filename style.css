@@ -229,6 +229,7 @@ label.hamburger /*Bouton Hamburger */
 .heading{
     display: flex;
     flex-direction: column;
+    
     padding-top: 5em;
     padding-left: 2em;
     padding-right: 2em;
@@ -247,21 +248,26 @@ label.hamburger /*Bouton Hamburger */
 .heading_text-heading h1{
     font-size: 2em;
     padding-bottom: .3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
 }
 
 .heading_text-heading p{
     text-align: justify;
+    line-height: 1.5em;
 }
 
 .heading_text-heading strong{
     color: #14B8A6;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
 }
 
 .heading>img{
     border-radius: 1em;
 }
 
-/* -------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------- */
 /* MEDIA QUERIES - TABLETTE */
 
 
