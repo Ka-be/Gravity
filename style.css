@@ -23,58 +23,6 @@ a{
 }
 
 
-/*  */
-/* SECTION HEADING */
-/*  */
-
-/* .heading{
-  height: 90vh;
-  padding: 100px;
-  justify-content: space-around;
-  align-items: center;
-  background: rgb(20,184,166);
-  background: linear-gradient(341deg, rgba(20,184,166,0.5) 0%, rgba(255,255,255,1) 60%);
-
-
-}
-
-.text-heading{
-    flex: 2;
-    margin-right: 5%;
-    height: 80%;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-
-.text-heading h1{
-    font-size: 4em;
-    font-weight: 700;
-    text-align: justify;
-}
-
-.text-heading strong{
-    color: #14B8A6;
-}
-
-.text-heading p{
-    font-size: 1.5em;
-    text-align: justify;
-    line-height: 1.3em;
-}
-
-.text-heading a{
-    color: #F1A208;
-}
-
-.heading img{
-   border-radius: 20px;
-   flex: 1;
-   max-width: 70%;
-   max-height: 70%;
-   box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.418) ;
-  } */
 
 
 /*  */
@@ -266,18 +214,32 @@ label.hamburger /*Bouton Hamburger */
 }
 
 .heading .heading_img img{
-    float:left;
-    max-height: 25em;
+    max-height: 30em;
     bottom: -1em;
     transform: rotate(10deg);
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 /* MEDIA QUERIES - TABLETTE */
+@media screen and (min-width: 575px) {
 
+    
+    .heading .heading_img img{
+        max-height: 40em;
+        position: relative;
+        bottom: 5em;
+    }
+}
 
 /* MEDIA QUERIES - TABLETTE XL / LAPTOP */
 
+@media screen and (min-width: 768px) {
+    .heading .heading_img img{
+        max-height: 50em;
+        position: relative;
+        bottom: 5em;
+    }
+}
 
 /* MEDIA QUERIES - PC */
 
@@ -383,12 +345,27 @@ label.hamburger /*Bouton Hamburger */
         transition: .4s ease-out;
     } 
     
-
-
     /* Heading */
 
     .heading{
-       flex-direction: row; 
+       flex-direction: row;
+       height: 100vh; 
+    }
+
+    .heading_text-heading{
+        flex: 1;
+        font-size: 1.5em;
+        padding-right: 0;
+    }
+
+    .heading_img{
+        flex: 2;
+    }
+
+    .heading_img img{
+        max-width: 90vw;
     }
     
+
+
 }
