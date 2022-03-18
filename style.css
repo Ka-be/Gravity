@@ -209,12 +209,12 @@ label.hamburger /*Bouton Hamburger */
     font-weight: 800;
 }
 
-.heading .heading_img {
+.heading_img {
     overflow: hidden; /* Cache le morceau de li'mage qui dépasse du conteneur */
     width: 100vw;
 }
 
-.heading .heading_img img{
+.heading_img img{
     max-height: 30em;
     bottom: -1em;
     transform: rotate(10deg);
@@ -350,6 +350,7 @@ label.hamburger /*Bouton Hamburger */
 
     .heading{
        flex-direction: row;
+       align-items:center;
        height: 100vh; 
     }
 
@@ -361,6 +362,7 @@ label.hamburger /*Bouton Hamburger */
 
     .heading_img{
         flex: 2;
+        height: 80vh;
     }
 
     .heading_img img{
