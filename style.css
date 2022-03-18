@@ -229,11 +229,10 @@ label.hamburger /*Bouton Hamburger */
 .heading{
     display: flex;
     flex-direction: column;
-    
     padding-top: 5em;
     padding-left: 2em;
     padding-right: 2em;
-    height: 100vh;
+    height: 90vh;
     text-align: left;
     justify-content: space-around;
     background: rgb(20,184,166);
@@ -247,7 +246,7 @@ label.hamburger /*Bouton Hamburger */
 
 .heading_text-heading h1{
     font-size: 2em;
-    padding-bottom: .3em;
+    padding-bottom: 1em;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
 }
