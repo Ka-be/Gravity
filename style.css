@@ -230,12 +230,8 @@ label.hamburger /*Bouton Hamburger */
     display: flex;
     flex-direction: column;
     padding-top: 8em;
-    padding-left: 2em;
-    padding-right: 2em;
     height: 90vh;
     width: 100vw;
-    text-align: left;
-    justify-content: flex-start;
     background: rgb(20,184,166);
     background: linear-gradient(340deg, rgba(20,184,166,0.5) 0%, rgba(255,255,255,1) 60%);
 }
@@ -243,6 +239,7 @@ label.hamburger /*Bouton Hamburger */
 .heading_text-heading{
     display: flex;
     flex-direction: column;
+    padding: 0 2em;
 }
 
 .heading_text-heading h1{
@@ -263,13 +260,16 @@ label.hamburger /*Bouton Hamburger */
     font-weight: 800;
 }
 
-.heading>img{
-    max-height: 25em;
-    position: absolute;
-    bottom: -1em;
-    overflow: hidden;
-    transform: rotate(10deg);
+.heading .heading_img {
+    overflow: hidden; /* Cache le morceau de li'mage qui dépasse du conteneur */
+    width: 100vw;
+}
 
+.heading .heading_img img{
+    float:left;
+    max-height: 25em;
+    bottom: -1em;
+    transform: rotate(10deg);
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */
