@@ -200,6 +200,7 @@ label.hamburger /*Bouton Hamburger */
 .heading_text-heading p{
     text-align: justify;
     line-height: 1.5em;
+    margin-bottom: 1em;
 }
 
 .heading_text-heading strong{
