@@ -51,7 +51,7 @@ a{
     margin: 2em;
     background: #f0fdfa54;
     border-radius: 2em;
-    box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.418) ;
+    box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.4) ;
 }
 
 .card:hover {
@@ -177,7 +177,7 @@ label.hamburger /*Bouton Hamburger */
 .heading{
     display: flex;
     flex-direction: column;
-    padding-top: 8em;
+    padding-top: 3em;
     height: 90vh;
     width: 100vw;
     background: rgb(20,184,166);
@@ -224,7 +224,10 @@ label.hamburger /*Bouton Hamburger */
 /* MEDIA QUERIES - TABLETTE */
 @media screen and (min-width: 575px) {
 
-    
+    .heading_text-heading h1{
+        font-size: 3em;
+    }
+
     .heading .heading_img img{
         max-height: 40em;
         position: relative;
