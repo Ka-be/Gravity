@@ -97,6 +97,7 @@ header {
     padding-left: 1em;
     padding-right: 1em;
     position: fixed;
+    z-index: 1;
 }
 
 header .logo img{
@@ -172,13 +173,13 @@ label.hamburger /*Bouton Hamburger */
         display: none;
     }
 
-/* Heaading */
+/* Heading */
 
 .heading{
     display: flex;
     flex-direction: column;
     padding-top: 6em;
-    height: 90vh;
+    height: 95vh;
     width: 100vw;
     background: rgb(20,184,166);
     background: linear-gradient(340deg, rgba(20,184,166,0.5) 0%, rgba(255,255,255,1) 60%);
@@ -218,6 +219,57 @@ label.hamburger /*Bouton Hamburger */
     max-height: 30em;
     bottom: -1em;
     transform: rotate(10deg);
+}
+
+
+/* Destinations */
+.destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.destinations h2{
+   margin: 1em 0;
+   text-align: center;
+   font-size: 1.5em;
+}
+
+.card-destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-bottom: 2em;
+    background: #dfe4e3;
+    border-radius: 1em;
+}
+
+.card>img {
+    border-radius: 1em 1em 0 0;
+}
+
+.card-title, .card-description {
+    padding: 1em;
+}
+
+.card-title{
+    background: black;
+    color: #F0FDFA;
+    font-size: 1.1em;
+}
+
+.card-description{
+    text-align: justify;
+    font-size: 0.9em;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------- */
