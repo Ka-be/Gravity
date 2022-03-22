@@ -236,6 +236,33 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #F0FDFA;
+}
+
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4em;
+    width: 100%;
+}
+
+.footer_top_social {
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+}
+.footer_top_social>img {
+   width: 1em;
+}
+
+.footer_top_about, .footer_top_legal{
+    flex: 1;
+    text-align: center;
+}
+
+.footer_bottom{
+    margin-bottom: 1em;
 }
 
 
