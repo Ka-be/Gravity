@@ -213,9 +213,11 @@ label.hamburger /*Bouton Hamburger */
 
 .card-description{
     text-align: justify;
-    background:#e6f5f2;
-    font-size: 0.9em;
+    font-size: 0.8em;
     border-radius: 0 0 1em 1em;
+    color: hsla(196, 93%, 12%, 0.8);
+    background: #f7f7f7;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .card {
