@@ -259,6 +259,7 @@ footer {
 .footer_top_about, .footer_top_legal{
     flex: 1;
     text-align: center;
+    font-size: 0.6em;
 }
 
 
