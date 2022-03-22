@@ -261,10 +261,6 @@ footer {
     text-align: center;
 }
 
-.footer_bottom{
-    margin-bottom: 1em;
-}
-
 
 
 /* ---------------------------------------------------------------------------------------------------------------- */
@@ -296,6 +292,16 @@ footer {
         width: 40vw;
     }
 
+    /* ----------------------------------------- Footer----------------------------------------- */
+    .footer_top_social>img {
+        width: 2em;
+     }
+
+     .copyright{
+         font-weight: bold;
+     }
+
+
 }
 
 /* MEDIA QUERIES - TABLETTE XL / LAPTOP */
@@ -321,6 +327,13 @@ footer {
         right: -10em;
     }
 }
+
+/* ----------------------------------------- Footer----------------------------------------- */
+.footer_top{
+    font-size: 1.2em;
+ }
+
+
 
 /* MEDIA QUERIES - PC */
 
@@ -463,4 +476,14 @@ footer {
         width: 20vw;
     }
 
+    /* ----------------------------------------- Footer----------------------------------------- */
+    .footer_top{
+        text-transform: uppercase;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+    }
+
+    .footer_top_about, .footer_top_legal{
+        flex: 2;
+    }
 }
