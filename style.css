@@ -222,6 +222,7 @@ label.hamburger /*Bouton Hamburger */
 
 .card {
     width: 80vw;
+    
 }
 
 
@@ -453,7 +454,7 @@ footer {
 
     .heading_text-heading{
         flex: 1;
-        font-size: 1.1em;
+        font-size: 1.05em;
     }
 
     .heading_img{
