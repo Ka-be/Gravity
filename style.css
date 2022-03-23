@@ -507,5 +507,6 @@ footer {
 
     .footer_top_about, .footer_top_legal{
         flex: 2;
+        font-size: 1em;
     }
 }
