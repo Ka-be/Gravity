@@ -229,7 +229,17 @@ label.hamburger /*Bouton Hamburger */
 
 .flotte {
     height: 100vh;
+    width: 100vw;
     background: #022B3A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flotte>img {
+    max-width: 50%;
+    max-height: 50%;
 }
 
 /* ----------------------------------------- Experiences----------------------------------------- */
