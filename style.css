@@ -172,9 +172,8 @@ label.hamburger /*Bouton Hamburger */
 .destinations {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 100vw;
 }
 
 .destinations h2{
@@ -460,6 +459,7 @@ footer {
     .heading_text-heading{
         flex: 1;
         font-size: 1.05em;
+        padding-bottom: 3em;
     }
 
     .heading_img{
@@ -474,15 +474,28 @@ footer {
 
    /*----------------------------------------- Destinations -----------------------------------------*/
 
+    .destinations{
+        height: 90vh;
+    }
+
+    .destinations h2{
+        font-size: 1.8em;
+    }
 
    .card-destinations {
     justify-content: space-around;
     width: 95vw;
- 
-}
+    }
    
    .card {
         width: 20vw;
+        opacity: 0.8;
+        transition: all ease-in 0.2s;
+    }
+
+    .card:hover {
+        opacity: 1;
+        cursor: pointer;
     }
 
     /* ----------------------------------------- Footer----------------------------------------- */
