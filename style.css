@@ -177,9 +177,9 @@ label.hamburger /*Bouton Hamburger */
 }
 
 .destinations h2{
-   margin: 1em 0;
-   text-align: center;
-   font-size: 1.5em;
+    margin: 1em 0;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .card-destinations {
@@ -349,7 +349,7 @@ footer {
 /* ----------------------------------------- Footer----------------------------------------- */
 .footer_top{
     font-size: 1.2em;
- }
+    }
 
 
 
@@ -361,7 +361,7 @@ footer {
     /*----------------------------------------- Header -----------------------------------------*/
     
     header{
-      height: 6rem;
+        height: 6rem;
     }
 
     .logo{
@@ -384,7 +384,7 @@ footer {
     
 
     /*----------------------------------------- Menu -----------------------------------------*/
- 
+
     label.hamburger {
         display: none;
     }
@@ -438,7 +438,7 @@ footer {
     } 
     
     /* Icone Cosmonaute caché */
-     #user-icon{
+    #user-icon{
         display: none;
         height: 1.5em;
         margin-left: .5em;
@@ -460,10 +460,10 @@ footer {
     /*----------------------------------------- Heading -----------------------------------------*/
 
     .heading{
-       flex-direction: row;
-       align-items:center;
-       height: 100vh; 
-       padding-top: 10em
+        flex-direction: row;
+        align-items:center;
+        height: 100vh; 
+        padding-top: 10em
     }
 
     .heading_text-heading{
@@ -482,7 +482,7 @@ footer {
         margin-left: -10em;
     }
 
-   /*----------------------------------------- Destinations -----------------------------------------*/
+    /*----------------------------------------- Destinations -----------------------------------------*/
 
     .destinations{
         height: 90vh;
@@ -492,12 +492,12 @@ footer {
         font-size: 1.8em;
     }
 
-   .card-destinations {
+    .card-destinations {
     justify-content: space-around;
     width: 95vw;
     }
-   
-   .card {
+
+    .card {
         width: 20vw;
         opacity: 0.8;
         transition: all ease-in 0.2s;
