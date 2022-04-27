@@ -252,9 +252,9 @@ label.hamburger /*Bouton Hamburger */
     max-height: 50%; */
     flex: 0 0 auto;
     width: auto;
-    height: 100%;
+    height: 80%;
     max-width: 100%;
-    margin: 0 100px 0 100px;
+    margin: 0 20px 0 20px;
 }
 
 /* ----------------------------------------- Experiences----------------------------------------- */
