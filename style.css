@@ -13,6 +13,10 @@ body{
     color: #022B3A;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 ul{
     list-style: none;
 }
@@ -234,12 +238,23 @@ label.hamburger /*Bouton Hamburger */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
 }
 
+.flotte::-webkit-scrollbar {
+    display: none;
+}
+
+
 .flotte>img {
-    max-width: 50%;
-    max-height: 50%;
+    /* max-width: 50%;
+    max-height: 50%; */
+    flex: 0 0 auto;
+    width: auto;
+    height: 100%;
+    max-width: 100%;
+    margin: 0 100px 0 100px;
 }
 
 /* ----------------------------------------- Experiences----------------------------------------- */
@@ -270,7 +285,7 @@ footer {
     flex:1;
 }
 .footer_top_social>img {
-   width: 1em;
+    width: 1em;
 }
 
 .footer_top_about, .footer_top_legal{
@@ -313,11 +328,11 @@ footer {
     /* ----------------------------------------- Footer----------------------------------------- */
     .footer_top_social>img {
         width: 2em;
-     }
+    }
 
-     .copyright{
-         font-weight: bold;
-     }
+    .copyright{
+        font-weight: bold;
+    }
 
 
 }
